@@ -1,7 +1,9 @@
 import { h, Component } from 'preact';
+import { connect } from 'preact-redux';
+import { bindActionCreators } from 'redux';
 import style from './style.less';
 
-export default class Profile extends Component {
+class ProfilePage extends Component {
 	state = {
 		count: 0
 	};
@@ -27,7 +29,13 @@ export default class Profile extends Component {
 		clearInterval(this.timer);
 	}
 
-	// Note: `user` comes from the URL, courtesy of our router
+  // Note: `user` comes from the URL, courtesy of our router
+  /**
+   * Render 
+   * 
+   * @param {Object} param0 URL Params 
+   * @param {Object} param1 State Params
+   */
 	render({ user }, { time, count }) {
 		return (
 			<div class={style.profile}>
@@ -40,3 +48,16 @@ export default class Profile extends Component {
 		);
 	}
 }
+
+const mapStateToProps = state => ({
+
+})
+
+const mapDispatchToProps = dispatch => bindActionCreators({
+
+}, dispatch);
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(ProfilePage);

@@ -1,4 +1,6 @@
-# Preact Boilerplate / Starter Kit [![Build Status](https://travis-ci.org/developit/preact-boilerplate.svg?branch=master)](https://travis-ci.org/developit/preact-boilerplate) [![Preact Slack Community](https://preact-slack.now.sh/badge.svg)](https://preact-slack.now.sh)
+# Forked from [https://github.com/developit/preact-boilerplate](https://github.com/developit/preact-boilerplate)
+
+# Preact Redux Boilerplate / Starter Kit [![Build Status](https://travis-ci.org/developit/preact-boilerplate.svg?branch=master)](https://travis-ci.org/developit/preact-boilerplate) [![Preact Slack Community](https://preact-slack.now.sh/badge.svg)](https://preact-slack.now.sh)
 
 :guitar: Ready-to-rock [Preact] starter project, powered by [webpack]. **[(View Demo)](https://preact-boilerplate.surge.sh)**
 
@@ -167,6 +169,19 @@ This project includes [preact-compat] alias in as `react` and `react-dom` right 
 
 ---
 
+## Cli
+
+It is possible to create a component or reducer file directly from a terminal : 
+
+```
+# Create a reducer
+# yarn run tpl reducer <reducerName>
+yarn run tpl reducer login
+
+# Create a Preact Component
+# yarn run tpl component <componentName> <path (optional)>
+yarn run tpl component footer
+```
 
 ## License
 

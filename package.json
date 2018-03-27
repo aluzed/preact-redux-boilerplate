@@ -1,5 +1,5 @@
 {
-  "name": "preact-boilerplate",
+  "name": "preact-redux-boilerplate",
   "version": "6.0.0",
   "description": "Ready-to-go Preact starter project powered by webpack.",
   "scripts": {
@@ -10,15 +10,20 @@
     "prebuild": "mkdirp build && ncp src/assets build/assets",
     "test": "npm run -s lint && jest --coverage",
     "test:watch": "npm run -s test -- --watch",
-    "lint": "eslint src test"
+    "lint": "eslint src test",
+    "tpl": "node ./cli/template.js --"
   },
   "keywords": [
     "preact",
+    "redux",
     "boilerplate",
     "webpack"
   ],
   "license": "MIT",
-  "author": "Jason Miller <jason@developit.ca>",
+  "author": [
+    "Jason Miller <jason@developit.ca>",
+    "Alexandre Penombre <aluzed@gmail.com>"
+  ],
   "jest": {
     "setupFiles": [
       "./test/setup.js"
@@ -88,12 +93,23 @@
     "webpack-dev-server": "^2.4.4"
   },
   "dependencies": {
+    "color-log": "^0.0.2",
+    "history": "^4.7.2",
+    "lodash": "^4.17.5",
+    "minimist": "^1.2.0",
+    "mustache": "^2.3.0",
     "preact": "^8.1.0",
     "preact-compat": "^3.15.0",
+    "preact-redux": "^2.0.3",
     "preact-render-to-string": "^3.6.0",
     "preact-router": "^2.5.1",
+    "preact-router-redux": "^4.1.0",
     "promise-polyfill": "^7.0.1",
     "proptypes": "^1.0.0",
+    "react": "^16.2.0",
+    "react-router-redux": "^4.0.8",
+    "redux": "^3.7.2",
+    "redux-thunk": "^2.2.0",
     "serve": "^6.0.0"
   }
 }

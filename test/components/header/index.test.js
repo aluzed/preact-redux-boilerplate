@@ -9,7 +9,6 @@ describe('components/Header', () => {
 		const header = <Header/>;
 		expect(header).to.contain(<a href='/'>Home</a>);
 		expect(header).to.contain(<a href='/profile'>Me</a>);
-		expect(header).to.contain(<a href='/profile/john'>John</a>);
 	});
 
 });
