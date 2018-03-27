@@ -170,7 +170,7 @@ This project includes [preact-compat] alias in as `react` and `react-dom` right 
 ---
 
 
-## Cli 
+## Cli 
 
 It is possible to create a component or reducer file directly from a terminal : 
 
